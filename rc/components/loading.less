@@ -1,0 +1,26 @@
+.loading{
+    position:absolute;
+    top:0px;
+    bottom: 0px;
+    left:0px;
+    right:0px;
+    background-color:#000;
+    opacity: .4;
+    span{
+        position: absolute;
+        height:100px;
+        width: 100px;
+        top:50%;
+        left:50%;
+        background-color:blue;
+        border-radius: 50px;
+        animation: rotate 2s linear  infinite ;
+    }
+    @keyframes rotate {
+        from{
+            transform: rotateZ(0deg)
+        }to{
+            transform: rotateZ(720deg)
+        }
+    }
+}
